@@ -70,9 +70,11 @@
                         <div class="header__description">
                             <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                         </div>
-                        <div class="input__container">
-                            <input type="email" class="no-border" placeholder="Your E-mail Address">
-                            <button class="btn">Get Started</button>
+                        <div class="input__container--parent">
+                            <div class="input__container">
+                                <input type="email" class="no-border" placeholder="Your E-mail Address">
+                                <button class="btn">Get Started</button>
+                            </div>
                         </div>
                         <figure>
                             <p class="about-us__text--customers">OUR TRUSTED CUSTOMERS</p>
@@ -297,7 +299,75 @@
         <section id="pricing">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Pricing Section<!--  -->
+                    <div class="pricing__description">
+                        <h3 class="pricing__title--small"><span class="purple">PRICING</span></h3>
+                        <h1 class="pricing__title--large">Reasonable & Flexible <span class="purple">Plans.</span></h1>
+                        <p class="pricing__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pricing__plans">
+                        <div class="plan plan--personal">
+                            <div class="plan__stripe"></div>
+                            <div class="plan__top personal--top">
+                                <h2 class="plan__title">PERSONAL</h2>
+                                <h1 class="plan__price">$17.99</h1>
+                                <h3 class="plan__duration">MONTHLY</h3>
+                            </div>
+                            <div class="plan__middle personal--middle">
+                                <h2 class="plan__suitability">For Individuals</h2>
+                                <div class="personal__features">
+                                    <p>30 Templates</p>
+                                    <p>7 Landing Pages</p>
+                                    <p>12 Internal Pages</p>
+                                    <p>Basic Assistance</p>
+                                </div>
+                            </div>
+                            <div class="plan__bottom personal--bottom">
+                                <button class="btn__plan-1">BUY NOW</button>
+                            </div>
+                        </div>
+                        <div class="plan plan--business">
+                            <div class="plan__stripe"></div>
+                            <div class="business__container">
+                                <div class="plan__top business--top">
+                                    <h2 class="plan__title white">BUSINESS</h2>
+                                    <h1 class="plan__price white">$37.99</h1>
+                                    <h3 class="plan__duration white">MONTHLY</h3>
+                                </div>
+                                <div class="plan__middle business--middle">
+                                    <h2 class="plan__suitability white">For Small Businesses</h2>
+                                    <div class="business__features">
+                                        <p class="white">60 Templates</p>
+                                        <p class="white">15 Landing Pages</p>
+                                        <p class="white">22 Internal Pages</p>
+                                        <p class="white">Priority Assistance</p>
+                                    </div>
+                                </div>
+                                <div class="plan__bottom business--bottom">
+                                    <button class="btn__plan-2"><span class="purple">BUY NOW</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan plan--enterprise">
+                            <div class="plan__stripe"></div>
+                            <div class="plan__top enterprise--top">
+                                <h2 class="plan__title">ENTERPRISE</h2>
+                                <h1 class="plan__price">$57.99</h1>
+                                <h3 class="plan__duration">MONTHLY</h3>
+                            </div>
+                            <div class="plan__middle enterprise--middle">
+                                <h2 class="plan__suitability">For Large Companies</h2>
+                                <div class="enterprise__features">
+                                    <p>90 Templates</p>
+                                    <p>27 Landing Pages</p>
+                                    <p>37 Internal Pages</p>
+                                    <p>Personal Assistance</p>
+                                </div>
+                            </div>
+                            <div class="plan__bottom enterprise--bottom">
+                                <button class="btn__plan-3">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
