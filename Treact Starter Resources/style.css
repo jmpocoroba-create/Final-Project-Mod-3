@@ -674,13 +674,40 @@ PRICING ↓
 .pricing__plans {
     display: flex;
     flex-direction: row;
+    max-height: 612px;
 }
 
 .plan {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     width: calc(100% / 3);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan__stripe--personal,
+.plan__stripe--business,
+.plan__stripe--enterprise {
+    height: 8px;
+    border-radius: 10px 10px 0 0;
+}
+
+.plan__stripe--personal {
+    background: linear-gradient(
+        115deg,
+        rgb(56, 178, 172) 0%,
+        rgb(129, 230, 217) 100%
+);
+}
+
+.plan__stripe--enterprise {
+    background: linear-gradient(
+        115deg,
+        rgb(245, 101, 101) 0%,
+        rgb(254, 178, 178) 100%
+);
 }
 
 .plan__top,
@@ -695,16 +722,17 @@ PRICING ↓
 
 .plan__top {
     padding: 36px 112px;
-    border-radius: 10px 10px 0 0;
+    
 }
 
 .plan__middle {
     line-height: 2.75;
     display: flex;
-    height: 276px;
-    max-height: 356px;
+    flex-direction: column;
+    height: 100%;
+    max-height: 264px;
     overflow: hidden;
-    padding-top: 42px;
+    padding: 38px 32px;
 }
 
 .plan__bottom {
@@ -716,16 +744,13 @@ PRICING ↓
     margin-right: 56px;
 }
 
-.personal--top,
 .personal--middle,
 .personal--bottom,
-.enterprise--top,
 .enterprise--middle,
 .enterprise--bottom {
-    border: solid 1.25px rgba(108, 106, 106, 0.218);
+    border-top: solid 1.5px rgba(108, 106, 106, 0.218);
 }
 
-.business--top,
 .business--middle,
 .business--bottom {
     border: solid 1.25px rgba(255, 255, 255, 0.15);
@@ -749,18 +774,15 @@ PRICING ↓
 
 .plan__suitability {
     font-size: 21px;
-    margin-top: 24px;
 }
 
 .personal__features,
 .enterprise__features {
-    margin-bottom: 76px;
     font-weight: 600;
     opacity: 0.6;
 }
 
 .business__features {
-    margin-bottom: 76px;
     font-weight: 600;
 }
 
