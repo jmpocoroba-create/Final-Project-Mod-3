@@ -403,7 +403,7 @@ QUALITY WORK ↓
 
 .quality__para {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     opacity: .6;
     margin-bottom: 32px;
@@ -579,7 +579,7 @@ VALUES ↓
 
 .values__para {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     opacity: .6;
     margin-bottom: 32px;
@@ -599,7 +599,7 @@ VALUES ↓
 
 .value__para {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     opacity: .6;
     margin-bottom: 36px;
@@ -847,6 +847,134 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+}
+
+.testimonials__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.testimonials__img {
+    width: 100%;
+}
+
+.testimonials__section--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 56px;
+}
+
+.testimonials__title--small {
+    margin-bottom: 24px;
+}
+
+.testimonials__title--large {
+    font-size: 42px;
+    font-weight: bolder;
+    margin-bottom: 28px;
+}
+
+.testimonials__para {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .6;
+    margin-bottom: 46px;
+}
+
+.fa-star {
+    margin-bottom: 24px;
+}
+
+.review__title {
+    margin-bottom: 24px;
+}
+
+.review__para {
+    margin-bottom: 24px;
+    line-height: 1.75;
+}
+
+.customer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer__info {
+    display: flex;
+}
+
+.customer__icon--figure {
+    padding-right: 24px;
+}
+
+.customer__icon {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.customer__identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer__name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.customer__affiliation {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .6;
+}
+
+.arrow__container {
+    display: flex;
+}
+
+.arrow__wrapper--right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    background-color: rgb(235, 237, 247);
+    border-radius: 50%;
+    width: 100%;
+    max-width: 64px;
+    width: 48px;
+    height: 48px;
+}
+
+.fa-arrow-right {
+    width: 75%;
+    color: #6415ff;
+}
+
+.arrow__wrapper--left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    background-color: rgb(235, 237, 247);
+    border-radius: 50%;
+    width: 100%;
+    max-width: 64px;
+    width: 48px;
+    height: 48px;
+}
+
+.fa-arrow-left {
+    width: 75%;
+    color: #6415ff;
 }
 
 
