@@ -874,7 +874,7 @@ TESTIMONIALS ↓
 }
 
 .testimonials__title--large {
-    font-size: 42px;
+    font-size: 46px;
     font-weight: bolder;
     margin-bottom: 28px;
 }
@@ -889,6 +889,7 @@ TESTIMONIALS ↓
 
 .fa-star {
     margin-bottom: 24px;
+    color: gold;
 }
 
 .review__title {
