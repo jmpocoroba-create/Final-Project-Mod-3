@@ -43,6 +43,7 @@ main {
 }
 
 a {
+    display: inline;
     text-decoration: none;
 }
 
@@ -889,11 +890,16 @@ TESTIMONIALS ↓
 
 .fa-star {
     margin-bottom: 24px;
-    color: gold;
+}
+
+.fa-star path {
+  color: rgb(255, 180, 0);
+  fill: rgb(255, 180, 0);
 }
 
 .review__title {
     margin-bottom: 24px;
+    opacity: 0.9;
 }
 
 .review__para {
@@ -930,6 +936,7 @@ TESTIMONIALS ↓
 .customer__name {
     font-size: 20px;
     margin-bottom: 8px;
+    opacity: 0.9;
 }
 
 .customer__affiliation {
@@ -957,7 +964,6 @@ TESTIMONIALS ↓
 
 .fa-arrow-right {
     width: 75%;
-    color: #6415ff;
 }
 
 .arrow__wrapper--left {
@@ -975,7 +981,12 @@ TESTIMONIALS ↓
 
 .fa-arrow-left {
     width: 75%;
-    color: #6415ff;
+}
+
+.fa-arrow-right path,
+.fa-arrow-left path {
+  color: #6415ff;
+  fill: #6415ff;
 }
 
 
@@ -988,8 +999,82 @@ START / CALL TO ACTION ↓
 
 
 #start .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.start-cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 56px;
+    width: 100%;
+    max-width: 1600px;
+    height: 20vw;
+    background-color: #6415ff;
+}
+
+.start__text--section {
+    width: 50%;
+    margin-left: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.call-to-action__btn--section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 36px;
+}
+
+.call-to-action__btn--start,
+.call-to-action__btn--contact {
+    padding: 22px 40px;
+    border-radius: 36px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.call-to-action__btn--start {
+    background-color: #f56565;
+    transition: background 300ms ease;
+}
+
+.call-to-action__btn--contact {
+    background-color: #6415ff;
+    border: solid 0.8px white;
+    margin-left: 32px;
+}
+
+.call-to-action__btn--start:hover {
+    cursor: pointer;
+    background-color: rgb(255, 55, 0);
+    transition: background 300ms ease;
+}
+
+.call-to-action__btn--contact:hover {
+    cursor: pointer;
+    color: #6415ff;
+    background-color: #fff;
+    transition: background 300ms ease;
+}
+
+.btn__transition {
+    transition: background 300ms ease;
 }
 
 
@@ -1008,6 +1093,104 @@ footer {
     overflow: hidden;
 }
 
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column--title {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer__column--link {
+    color: #fff;
+    line-height: 2.4;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer__column--link {
+    display: flex;
+}
+
+.footer__column--link:hover:after {
+    opacity: 1;
+    transition: all 300ms ease;
+}
+
+.footer__column--link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms ease;
+    opacity: 0;
+    transform: translateY(-8px);
+}
+
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.footer__logo--text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.footer__copyright {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.footer__socials {
+    display: flex;
+    scale: 0.9;
+}
+
+.footer__social--link {
+    margin-left: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 300ms ease;
+}
+
+.footer__social--link:hover {
+    opacity: 0.8;
+    transition: all 300ms ease;
+}
 
 /* 
 
