@@ -1406,6 +1406,23 @@ MOBILE RESPONSIVENESS ↓
         font-size: 16px;
     }
 
+    .pricing__plans {
+    width: 100%;
+    max-height: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    }
+
+    .plan {
+    width: 100%;
+    max-width: 384px;
+    }
+
+    .plan--business {
+    margin: 0;
+    }
+
     .testimonials__figure {
         width: 38vw;
     }
@@ -1455,6 +1472,16 @@ MOBILE RESPONSIVENESS ↓
         transform: scale(0.9);
         padding: 8px 56px;
         margin-left: 0;
+    }
+
+    .footer__columns {
+        flex-wrap: wrap;
+        gap: 40px 0;
+        justify-content: center;
+    }
+
+    .footer__column {
+        width: calc(100% / 3);
     }
 }
 
