@@ -350,7 +350,7 @@ FEATURES ↓
 .service__title {
     margin-bottom: 12px;
     font-size: 26px;
-    text-align: left
+    text-align: center;
 }
 
 .service__text {
@@ -358,7 +358,7 @@ FEATURES ↓
     font-size: 16px;
     font-weight: 500;
     opacity: .6;
-    text-align: left;
+    text-align: center;
 }
 
 .icon__wrapper--container {
@@ -1093,8 +1093,7 @@ START / CALL TO ACTION ↓
     margin-right: 36px;
 }
 
-.call-to-action__btn--start,
-.call-to-action__btn--contact {
+.call-to-action__btn {
     padding: 22px 40px;
     border-radius: 56px;
     border: none;
@@ -1103,31 +1102,27 @@ START / CALL TO ACTION ↓
     color: #fff;
 }
 
-.call-to-action__btn--start {
+.start__btn {
     background-color: #f56565;
     transition: background 300ms ease;
 }
 
-.call-to-action__btn--contact {
+.contact__btn {
     background-color: #6415ff;
     border: solid 0.8px white;
     margin-left: 32px;
 }
 
-.call-to-action__btn--start:hover {
+.start__btn:hover {
     cursor: pointer;
     background-color: rgb(255, 55, 0);
     transition: background 300ms ease;
 }
 
-.call-to-action__btn--contact:hover {
+.contact__btn:hover {
     cursor: pointer;
     color: #6415ff;
     background-color: #fff;
-    transition: background 300ms ease;
-}
-
-.btn__transition {
     transition: background 300ms ease;
 }
 
@@ -1467,8 +1462,7 @@ MOBILE RESPONSIVENESS ↓
         margin-right: 0;
     }
 
-    .call-to-action__btn--start,
-    .call-to-action__btn--contact {
+    .call-to-action__btn {
         transform: scale(0.9);
         padding: 8px 56px;
         margin-left: 0;
@@ -1661,19 +1655,39 @@ MOBILE RESPONSIVENESS ↓
         font-size: 15px;
     }
 
+    .customer__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer__icon--figure {
+        padding-right: 0;
+    }
+
+    .start__text--section {
+        width: 100%;
+    }
+
     .start__title {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .call-to-action__btn--section {
         margin-right: 0;
+        width: 100%;
+        flex-direction: column;
     }
 
-    .call-to-action__btn--start,
-    .call-to-action__btn--contact {
+    .call-to-action__btn {
         transform: scale(0.8);
         padding: 8px 56px;
         margin-left: 0;
+        height: 68px;
     }
 }
 
@@ -1768,6 +1782,11 @@ MOBILE RESPONSIVENESS ↓
     .start__title {
         font-size: 18px;
     }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 @media(max-width: 550px) {
@@ -1785,8 +1804,7 @@ MOBILE RESPONSIVENESS ↓
         font-size: 16px;
     }
 
-    .call-to-action__btn--start,
-    .call-to-action__btn--contact {
+    .call-to-action__btn {
         transform: scale(0.5);
     }
 }
